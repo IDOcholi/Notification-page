@@ -1,0 +1,205 @@
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans-ExtraBold;
+    src: url(./assets/fonts/PlusJakartaSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans-Medium;
+    src: url(./assets/fonts/PlusJakartaSans-Medium.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-grayish-blue);
+    font-family: 'PlusJakartaSans' sans-serif;
+}
+
+main{
+    background-color: var(--White);
+    font-size: 16px;
+    min-height: 100vh;
+    max-width: 650px;
+    max-height: fit-content;
+    padding: 1.5rem 1.5rem;
+    border-radius: 2rem;
+    margin-top: 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+h1{
+    font-family: 'PlusJakartaSans-ExtraBold';
+    font-size: 2rem;
+}
+
+.number{
+    background-color: var(--Blue);
+    color: var(--White);
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 0.1rem 0.6rem;
+    margin-left: 15px;
+}
+
+button{
+    font-family: 'PlusJakartaSans-Medium';
+    background: transparent;
+    color: var(--Dark-grayish-blue);
+    border-style: none;
+    font-size: 1rem;
+}
+
+button:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+main a{
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    gap: 1rem;
+    font-size: 14px;
+    padding: 1rem;
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+.unread{
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.profile-pic img{
+    width: 40px;
+    height: 40px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    color: var(--Dark-grayish-blue);
+    height: 100%;
+}
+
+.user-name{
+    font-family: 'PlusJakartaSans-ExtraBold';
+    color: var(--Very-dark-blue) ;
+    margin-right: 0.3rem;
+}
+
+.info{
+    font-family: 'PlusJakartaSans-ExtraBold';
+    margin: 0.3rem;
+}
+
+.user-name:hover,
+.info:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+.chess{
+    color: var(--Blue);
+}
+
+.dot{
+    background-color: var(--Red);
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-left: 0.06rem;
+    border-radius: 50%;
+}
+
+.time{
+    color: var(--Grayish-blue);
+    margin-top: 0.08rem;
+}
+
+.comment{
+    border: 1px solid var(--Light-grayish-blue-1);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+.comment:hover{
+    background-color: var(--Light-grayish-blue-2);
+}
+
+.chess-pic{
+    margin-left: auto;
+}
+
+.chess-pic img{
+    width: 40px;
+    height: 40px;
+}
+footer{
+    font-family: 'PlusJakartaSans-Medium';
+    margin-top: 15px;
+    width: 100%;
+}
+
+.attribution {
+    background-color: var(--Very-dark-blue);
+    color: var(--White);
+    padding-block: 13px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+    .attribution a {
+       color: var(--White);
+       text-decoration: none;
+       }
+
+        a:hover{
+        color: var(--Light-grayish-blue-2);
+       }
+
+       @media only screen and (max-width: 600px) {
+
+        main{
+            font-size: 14px;
+            margin: 3rem 0;
+        }
+
+        .attribution{
+            font-size: 80%;
+        }
+
+        
+       }
